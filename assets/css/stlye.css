@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  overflow: auto;
+  margin: 0 auto;
+  background-color: #10aeb5;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+}
+header {
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+}
+header img {
+  height: 60px;
+}
+header .logon {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 60px;
+}
+header .nav {
+  max-width: 900px;
+  flex: 7;
+}
+main {
+  display: flex;
+  flex-flow: column;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #10aeb5;
+}
+main .title {
+  background-image: url(https://mms-res.cdn.bcebos.com/mms-res/voicefe/captain/images/79cc66862a95704652df8c41b269afdd.png?size=1434*378);
+  background-size: 695px 189px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: #10aeb5;
+  color: #fff;
+  height: 189px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+main .title p {
+  line-height: 30px;
+}
+main .title h2 {
+  line-height: 50px;
+  margin-top: 10px;
+  font-size: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+}
+main section {
+  background-color: #fff;
+  margin: 0px 0px 30px 0;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: column;
+}
+main section .top {
+  display: flex;
+  justify-content: space-around;
+  line-height: 60px;
+  border-bottom: 1px solid #f1f1f1;
+}
+main section .top .line {
+  border-bottom: 3px solid #10aeb5;
+}
+main section .map {
+  height: 700px;
+  width: 100%;
+  padding: 30px;
+}
+main section .title1 {
+  padding: 10px 40px;
+}
+main section .title1 h4 {
+  line-height: 40px;
+}
+main section .title1 .time {
+  display: flex;
+  justify-content: space-between;
+}
+main section .title1 .time p {
+  line-height: 20px;
+  font-size: 13px;
+  color: #555;
+}
+main section .data {
+  line-height: 30px;
+}
+main section .data ul {
+  padding-bottom: 20px;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  text-align: center;
+}
+main section .data ul li {
+  width: 25%;
+  height: 100px;
+  padding: 10px;
+}
+main section .data ul li h2 {
+  color: red;
+}
+main section .data ul li .small {
+  font-size: 10px;
+}
+main section .data .mapOne {
+  height: 800px;
+  width: 100%;
+  padding: 30px;
+  background-color: rgba(228, 228, 228, 0.6);
+}
+main section .data .mapTow {
+  height: 800px;
+  width: 100%;
+  padding: 30px;
+  background-color: rgba(228, 228, 228, 0.6);
+}
+main section .data:nth-child(2) {
+  /* display: none; */
+}
+.fx {
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+}
+.fx .fx-text {
+  position: absolute;
+  top: 10px;
+  right: 28px;
+  height: 80px;
+  display: flex;
+  text-align: center;
+  flex-flow: column;
+  color: #fff;
+}
+.fx .fx-text p {
+  font-size: 12px;
+}
+.fx img {
+  height: 65px;
+}
+.fx-img {
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5 ;
+}
+.fx-img img {
+  width: 400px;
+}
+.colse {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  transition: all 1s linear;
+}
+.colse:hover {
+  background: #666;
+  opacity: 0.5;
+}
+@media screen and (max-width: 960px) {
+  header {
+    display: none;
+  }
+}
